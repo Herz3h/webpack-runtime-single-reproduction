@@ -1,0 +1,25 @@
+{
+    "env": {
+        "development": {
+            "presets": [
+                ["@babel/preset-env", {
+                    "exclude": [],
+                    "useBuiltIns": "usage",
+                    "corejs": "3.37.1",
+                    "include": ["transform-async-to-generator"],
+                    "debug": true
+                }]
+            ],
+        },
+        "production": {
+            "presets": [
+                ["@babel/preset-env", {
+                    "exclude": [],
+                    "useBuiltIns": "usage",
+                    "corejs": "3.37.1",
+                    "include": ["transform-async-to-generator"]
+                }]
+            ],
+        }
+    }
+}
